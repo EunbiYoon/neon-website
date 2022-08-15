@@ -1,0 +1,166 @@
+#introduction-section{
+    padding: 120px 15px;
+}
+
+#introduction-section .title{
+    position: relative;
+    width:200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#introduction-section .title .circle{
+    background : transparent;
+    width : 150px;
+    height : 150px;
+    border-radius: 50%;
+    top:23px;
+    position: absolute;
+    border: 5px solid white;
+    box-shadow: 0 0 10px white, 
+    0 0 20px white, 
+    0 0 30px white,
+    0 0 40px white, 
+    0 0 50px #b56efc, 
+    0 0 60px white, 
+    0 0 70px white;
+}
+
+#introduction-section .title h1{
+    position: relative;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#16171b;
+    z-index: 1;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px #e60092, 
+    0 0 20px #e60092, 
+    0 0 30px #e60092,
+    0 0 40px #e60092, 
+    0 0 50px #e60092, 
+    0 0 60px white, 
+    0 0 70px white;
+    text-shadow: 0 0 5px green, 0 0 10px navy, 0 0 15px blue, 0 0 20px yellow, 0 0 25px gray, 0 0 30px navy, 0 0 35px #b56efc; 
+}
+
+#introduction-section .introduction-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+#introduction-section .introduction-container .box{
+    background: rgba(255,255,255,0);
+    padding: 40px;
+    transition : all .4s ease-in-out;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+#introduction-section .introduction-container .box h5{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color:white;
+ 
+}
+
+#introduction-section .introduction-container .box p{
+    font-size: .8rem;
+    line-height: 1.5;
+    color : #b3b3b3
+}
+
+#introduction-section .introduction-container .box.blue h5{ 
+    color: #faf9d8
+}
+#introduction-section .introduction-container .box.blue .fas{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color:#faf9d8;
+}
+
+#introduction-section .introduction-container .box.red h5{ 
+    color: #95cbfa
+}
+#introduction-section .introduction-container .box.red .fas{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color:#95cbfa;
+}
+
+#introduction-section .introduction-container .box.yellow h5{ 
+    color: #a7efd2
+}
+#introduction-section .introduction-container .box.yellow .fas{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color:#a7efd2;
+}
+
+
+
+
+/*tablets*/
+@media only screen and (max-width: 1248px){
+    #introduction-section .introduction-container{
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+    #introduction-section .introduction-container .box h5{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box{
+        padding:0 30px;
+    }
+    #introduction-section .introduction-container .box.blue .fas{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box.red .fas{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box.yellow .fas{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box p{
+        font-size: 1.3rem;
+    }
+}
+
+/*phones*/
+@media only screen and (max-width: 767px){
+    #introduction-section .title .circle{
+        width : 80px;
+        height : 80px;
+    }
+    #introduction-section .title h1{
+        font-size: 2rem;
+        top:-35px;
+        margin-bottom:0;
+    }
+    #introduction-section .introduction-container{
+        grid-template-columns: 100%;
+    }
+    #introduction-section .introduction-container .box h5{
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
+    }
+    #introduction-section .introduction-container .box{
+        padding:0;
+    }
+    #introduction-section .introduction-container .box.blue .fas{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box.red .fas{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box.yellow .fas{
+        margin-bottom: 0.3rem;
+    }
+}
