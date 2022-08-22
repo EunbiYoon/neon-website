@@ -11,27 +11,20 @@
   <body>
     <header>
       <div class="logo">
-        <a href="/index.html" class="name">Portfolio</div>
+        <a href="/index.html" class="name">Portfolio</a>
       </div>
-      </div>
-      <div class="header-menu">
-        <a href="index.html">Home</a> 
-        <a href="index.html#introduction-section">Introduction</a>
-        <a href="index.html#project-section">Project</a>
-        <a href="index.html#experience-section">Experience</a>
-        <a href="index.html#summary-section">Summary</a>
-      </div>
-      <div class ="menu-btn">
-        <i class="fas fa-bars"></i>
+      <div class="navigation">
+        <input type="checkbox" class="toggle-menu">
+        <div class="hamburger"></div>
+        <ul class="menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#introduction-section">Introuduction</a></li>
+          <li><a href="#project-section">Project</a></li>
+          <li><a href="#experience-section">Experience</a></li>
+          <li><a href="#summary-section">Summary</a></li>
+        </ul>
       </div>
     </header>
-    <div class="mobile-menu">
-      <a href="index.html">Home</a> 
-      <a href="index.html#introduction-section">Introduction</a>
-      <a href="index.html#project-section">Project</a>
-      <a href="index.html#experience-section">Experience</a>
-      <a href="index.html#summary-section">Summary</a>
-    </div>
 
 
     <section id="top">
@@ -57,8 +50,7 @@
         </div>
         <div class="introduction-container">
           <div class="box blue">
-            <i class="fas fa-trophy"></i>
-            <h5>Awards</h5>
+            <i class="fas fa-trophy"><h5>Awards</h5></i>
             <p>•	1st Award Digital Transformation in LG Electronics, Mar 2022
               <br/>•	1st Award Artificial Intelligence Research Category in Korean Broadcast Media Engineering Association, Dec 2019
               <br/>•	3rd Award Artificial Intelligence Research Category in Practical Research Association, Dec 2019
@@ -84,93 +76,38 @@
 
 
     <section id="project-section">
-      <div class="container">
-        <div class="title">
-          <div class="square"></div>
-          <h1>project</h1>
-        </div>
+      <div class="title">
 
-
-        <div class="project-container">
-          <form action=" " method="POST">
-            <a href="#" class="box image1">
-              <div class="image">
-                <div class ="hover-bg">
-                  <div class="title">
-                    <input type="submit" class="btn" value="quality" name="action1">
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" class="box image2">
-              <div class="image">
-                <div class ="hover-bg">
-                  <div class="title">
-                    <div class="text">Vision System</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="service.html" class="box image3">
-              <div class="image">
-                <div class ="hover-bg">
-                  <div class="title">
-                    <div class="text">Service & Sales Trend</div> 
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="box image4">
-              <div class="image">
-                <div class ="hover-bg">
-                  <div class="title">
-                    <div class="text">Real-Time Product Monitoring</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="box image5">
-              <div class="image">
-                <div class ="hover-bg">
-                  <div class="title">
-                    <div class="text">Line Audit System</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="box image6">
-              <div class="image">
-                <div class ="hover-bg">
-                  <div class="title">
-                    <div class="text">Automatic Email Sending</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="#" class="box image7">
-              <div class="image">
-                <div class ="hover-bg">
-                  <div class="title">
-                    <div class="text">Full-Stack Website</div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </form>  
-        </div>
+        <h1>Project</h1>
       </div>
-    </section>
+      <div class="container">
+        <div class="file_shape1"></div>
+        <div class="file_shape2"></div>
+        <div class="name">
+            <h2>Click The Image</h2>
+        </div>
+        <form action="" method="POST">
+          <div class="project-container">
+            <div class="box image1">
+                <input type="submit" class="btn" name="action1" value="Quality Indicator">
+              </div>
+            <div class="box image2">
+              <input type="submit" class="btn" name="action2" value="Vision System">
+            </div>
+            <div class="box image3">
+              <input type="submit" class="btn" name="action3" value="Big Data Analysis">
+            </div>
+            <div class="box image4">
+              <input type="submit" class="btn" name="action4" value="Web Application">
+            </div>
+            <div class="box image5">
+              <i class="fas fa-code"></i>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
   
     <section id="experience-section">
       <div class="container">
@@ -225,7 +162,7 @@
     <section id="summary-section">
       <div class="container">
         <div class="title">
-          <div class="square"></div>
+          <div class="circle"></div>
           <h1>Summary</h1>
         </div>
         <div class="summary-container">
@@ -241,9 +178,8 @@
               <div class="user-img" style="background: url(https://media-exp1.licdn.com/dms/image/C4E03AQFdyB1A7ceTww/profile-displayphoto-shrink_800_800/0/1603287662689?e=1663804800&v=beta&t=N4YFvqn911EGd3EmZ0Wrca4HJOSBnVtTXYcP2lYdPmg);">
                </div> 
                 <div class="info">
-                  <h4>Software Enginner</h4>
-                  <span>LG Electrionics North America
-                    Researh and Development Team
+                  <h4>Software Developer</h4>
+                  <span>LG Electrionics North America<br/>Researh and Development Team
                   </span>
               </div>
             </div>   

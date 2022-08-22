@@ -6,17 +6,17 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def main():
     if request.method == 'POST':
-        if request.form.get('action1') == 'quality':
+        if request.form.get('action1') == 'Quality Indicator':
             return render_template('item/quality.html') # do something
-        elif  request.form.get('action2') == 'vision':
+        elif  request.form.get('action2') == 'Vision System':
             return render_template('item/visiion.html') # do something
-        elif  request.form.get('action3') == 'service':
+        elif  request.form.get('action3') == 'Sales & SVC Trend':
             return render_template('item/service.html') # do something
-        elif  request.form.get('action4') == 'product':
+        elif  request.form.get('action4') == 'Product Real-time Monitoring':
             return render_template('item/product.html') # do something
-        elif  request.form.get('action5') == 'audit':
+        elif  request.form.get('action5') == 'Line Audit':
             return render_template('item/audit.html') # do something
-        elif  request.form.get('action6') == 'email':
+        elif  request.form.get('action6') == 'Automatic Email':
             return render_template('item/email.html') # do something
         elif  request.form.get('action7') == 'website':
             return render_template('item/website.html') # do something

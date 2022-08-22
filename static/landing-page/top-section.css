@@ -1,7 +1,10 @@
+#top{
+    margin-bottom: 200px;
+}
 #top .container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    padding: 80px 0;
+    padding: 120px 0;
     align-items: center;
 }
 #top .info{
